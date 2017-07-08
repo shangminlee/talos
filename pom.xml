@@ -342,7 +342,7 @@
     <!--maven jar仓库URL end-->
 
     <build>
-        <finalName>fatcat</finalName>
+        <finalName>talos</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
