@@ -48,6 +48,8 @@
         <cl.version>3.4</cl.version>
         <fastjson-version>1.2.34</fastjson-version>
 
+        <swagger.springfox.version>2.6.1</swagger.springfox.version>
+
     </properties>
 
     <dependencyManagement>
@@ -319,6 +321,20 @@
             </dependency>
 
             <!-- Model管理 end -->
+
+            <!-- swagger start -->
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-swagger2</artifactId>
+                <version>${swagger.springfox.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-swagger-ui</artifactId>
+                <version>${swagger.springfox.version}</version>
+            </dependency>
+            <!-- swagger end -->
 
         </dependencies>
     </dependencyManagement>

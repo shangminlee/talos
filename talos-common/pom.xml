@@ -8,7 +8,7 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-
+    <packaging>jar</packaging>
     <artifactId>talos-common</artifactId>
 
     <dependencies>
@@ -28,6 +28,11 @@
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
         </dependency>
-
     </dependencies>
+
+    <build>
+        <directory>${basedir}/target</directory>
+        <finalName>${artifactId}-${version}</finalName>
+    </build>
+
 </project>
